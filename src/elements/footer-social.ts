@@ -91,22 +91,12 @@ export class FooterSocial extends PolymerElement {
         margin-bottom: -10px;
       }
 
-      .social-networks,
-      .blog {
+      .social-networks {
         padding-top: 0;
       }
 
       .social-networks ul {
         list-style-type: disc;
-      }
-
-      .blog .title {
-        padding-right: 55px;
-      }
-
-      .blog a {
-        border-bottom: 1px solid var(--footer-text-color);
-        padding-bottom: 1px;
       }
 
       @media (min-width: 768px) {
@@ -132,10 +122,6 @@ export class FooterSocial extends PolymerElement {
 
         .social-networks {
           padding-top: 8px;
-        }
-
-        .blog {
-          padding-top: 17px;
         }
       }
 
@@ -168,17 +154,6 @@ export class FooterSocial extends PolymerElement {
             ga-event-label="twitter">
           </paper-icon-button>
         </div>
-      </div>
-    </div>
-
-    <div class="social-group blog">
-      <div class="title">
-        {$ followOur $}
-        <a
-          href="{$ organizer.blog $}"
-          {% if organizer.blog.startsWith('http') %} target="_blank" rel="noopener noreferrer" {% endif %}>
-          {$ footer.blog $}
-        </a>
       </div>
     </div>
 

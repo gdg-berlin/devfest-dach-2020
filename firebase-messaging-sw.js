@@ -4,7 +4,6 @@ importScripts('./node_assets/firebase/firebase-messaging.js');
 firebase.initializeApp({
   apiKey: '{$ firebase.apiKey $}',
   appId: '{$ firebase.appId $}',
-  authDomain: '{$ firebase.authDomain $}',
   databaseURL: '{$ firebase.databaseURL $}',
   messagingSenderId: '{$ firebase.messagingSenderId $}',
   projectId: '{$ firebase.projectId $}',

@@ -1,5 +1,4 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { blogReducer } from './blog/reducers';
 import { dialogsReducer } from './dialogs/reducers';
 import { feedbackReducer } from './feedback/reducers';
 import { filtersReducer } from './filters/reducers';
@@ -21,7 +20,6 @@ import { userReducer } from './user/reducers';
 import { videosReducer } from './videos/reducers';
 
 const rootReducer = {
-  blog: blogReducer,
   dialogs: dialogsReducer,
   feedback: feedbackReducer,
   filters: filtersReducer,

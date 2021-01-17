@@ -61,7 +61,6 @@ in `hoverboard-app.html`
 ```html
 <iron-pages>
   <home-page data-route="home"></home-page>
-  <blog-page data-route="blog" route="[[subRoute]]"></blog-page>
   <speakers-page data-route="speakers" route="[[subRoute]]"></speakers-page>
 </iron-pages>
 ```

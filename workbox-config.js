@@ -11,7 +11,6 @@ export const workboxConfig = {
     /\/__\/.*/, // Private Firebase URLs
   ],
   skipWaiting: true,
-  offlineGoogleAnalytics: true,
   globDirectory: path.join(__dirname, 'dist'),
   globPatterns: ['**/*.{html,js,css,json,svg,md}', 'node_assets/**/*.js'],
   runtimeCaching: [

@@ -3,7 +3,6 @@ import { store } from '../';
 import { db } from '../db';
 import { openDialog } from '../dialogs/actions';
 import { DialogForm, DIALOGS } from '../dialogs/types';
-import { trackError } from '../helpers/actions';
 import { showToast } from '../toast/actions';
 import { SUBSCRIBE } from './types';
 
@@ -33,7 +32,6 @@ export const subscribe = (data: DialogForm) => (dispatch: Dispatch) => {
         subscribed: false,
       });
 
-      trackError('subscribeActions', 'subscribe', error);
     });
 };
 

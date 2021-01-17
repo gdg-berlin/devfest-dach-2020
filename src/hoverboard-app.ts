@@ -30,19 +30,16 @@ import { log } from './console';
 import './elements/dialogs/feedback-dialog';
 import './elements/dialogs/previous-speaker-details';
 import './elements/dialogs/session-details';
-import './elements/dialogs/signin-dialog';
 import './elements/dialogs/speaker-details';
 import './elements/dialogs/subscribe-dialog';
 import './elements/dialogs/video-dialog';
 import './elements/footer-block';
 import './elements/header-toolbar';
-import './elements/hoverboard-analytics';
 import './elements/hoverboard-icons';
 import './elements/polymer-helmet';
 import './elements/shared-styles';
 import './elements/toast-element';
 import { ReduxMixin } from './mixins/redux-mixin';
-import './pages/blog-page';
 import './pages/coc-page';
 import './pages/faq-page';
 import './pages/home-page';
@@ -60,7 +57,6 @@ import { initialRoutingState, RoutingState } from './store/routing/state';
 import { fetchTickets } from './store/tickets/actions';
 import { showToast } from './store/toast/actions';
 import { setViewportSize } from './store/ui/actions';
-import { updateUser } from './store/user/actions';
 import { TempAny } from './temp-any';
 import { isDialogOpen } from './utils/dialogs';
 import { scrollToY } from './utils/scrolling';
@@ -255,7 +251,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
             hide-immediately
           >
             <home-page name="home"></home-page>
-            <blog-page name="blog" route="[[subRoute]]"></blog-page>
             <schedule-page name="schedule" route="[[subRoute]]"></schedule-page>
             <speakers-page name="speakers" route="[[subRoute]]"></speakers-page>
             <previous-speakers-page
@@ -315,9 +310,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
       >
       </subscribe-dialog>
 
-      <signin-dialog opened="[[isSigninDialogOpen]]" with-backdrop></signin-dialog>
-
-      <hoverboard-analytics></hoverboard-analytics>
       <toast-element></toast-element>
     `;
   }
@@ -342,8 +334,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
   private _openedDialog = false;
   @property({ type: Object })
   private user = {};
-  @property({ type: Array })
-  private providerUrls = '{$ signInProviders.allowedProvidersUrl $}'.split(',');
   @property({ type: Object })
   private tickets = { list: [] };
   @property({ type: Boolean })
@@ -357,8 +347,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
   @property({ type: Object })
   private routeData = {};
   @property({ type: Boolean })
-  private isSigninDialogOpen = false;
-  @property({ type: Boolean })
   private isSpeakerDialogOpen = false;
   @property({ type: Boolean })
   private isPreviousSpeakerDialogOpen = false;
@@ -371,7 +359,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
 
   stateChanged(state: RootState) {
     this.dialogs = state.dialogs;
-    this.isSigninDialogOpen = isDialogOpen(this.dialogs, DIALOGS.SIGNIN);
     this.isSpeakerDialogOpen = isDialogOpen(this.dialogs, DIALOGS.SPEAKER);
     this.isPreviousSpeakerDialogOpen = isDialogOpen(this.dialogs, DIALOGS.PREVIOUS_SPEAKER);
     this.isSessionDialogOpen = isDialogOpen(this.dialogs, DIALOGS.SESSION);
@@ -422,7 +409,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
     super.ready();
     log('Hoverboard is ready!');
     this.removeAttribute('unresolved');
-    updateUser();
     initializeMessaging().then(() => store.dispatch(getToken()));
   }
 
@@ -483,11 +469,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
     if (!this.addToHomeScreen) this.closeDrawer();
     this.addToHomeScreen.prompt();
     this.addToHomeScreen.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        ga('send', 'event', 'add_to_home_screen_prompt', 'accepted');
-      } else {
-        ga('send', 'event', 'add_to_home_screen_prompt', 'dismissed');
-      }
       this.addToHomeScreen = null;
       this.closeDrawer();
     });

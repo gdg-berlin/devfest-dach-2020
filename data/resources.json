@@ -12,8 +12,6 @@
   "partnershipResources": "Partnership Resources",
   "eventResources": "Event Resources",
   "buyTicket": "Buy ticket",
-  "signIn": "Sign in",
-  "signOut": "Sign out",
   "viewHighlights": "View Highlights",
   "offlineMessage": "You can still work offline.",
   "cachingComplete": "Caching complete! Future visits will work offline.",
@@ -25,9 +23,6 @@
   "faq": "/data/faq.md",
   "coc": "/data/coc.md",
   "timezoneOffset": "-180",
-  "footer": {
-    "blog": "Blog"
-  },
   "mySchedule": {
     "title": "My Schedule",
     "browseSession": "Browse sessions"
@@ -182,17 +177,6 @@
       "link": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
     }
   },
-  "blog": {
-    "published": "Published",
-    "suggested": "Up next"
-  },
-  "latestPostsBlock": {
-    "title": "The latest news",
-    "callToAction": {
-      "label": "View all stories",
-      "link": "/blog/"
-    }
-  },
   "speakers": {
     "skills": "Skills",
     "previousYears": "Years",
@@ -243,14 +227,10 @@
   "team": {
     "description": "Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.<br><br> [Google Developers Group (GDG) Lviv](http://lviv.gdg.org.ua/) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion.<br><br> Our goal is to organize space to connect the best industry experts with Ukrainian audience to boost development of IT."
   },
-  "schedule": {
-    "saveSessionsSignedOut": "Sign in to save sessions"
-  },
   "feedback": {
     "save": "Save",
     "headline": "Review session",
     "leaveFeedback": "to leave feedback",
-    "sendFeedbackSignedOut": "Sign in to leave feedback",
     "feedbackRecorded": "Your saved",
     "feedbackDeleted": "Feedback deleted",
     "helperText": "Comments will be anonymously provided to speakers",
@@ -313,14 +293,6 @@
         }
       }
     ]
-  },
-  "signInDialog": {
-    "alreadyHaveAccount": "You already have an account",
-    "alreadyUsed": "You've already used",
-    "signInToContinue": {
-      "part1": "Sign in with",
-      "part2": "to continue."
-    }
   },
   "filters": {
     "title": "Filters",

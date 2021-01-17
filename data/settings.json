@@ -2,7 +2,7 @@
   "organizer": {
     "name": "GDGs DACH",
     "twitter": "gdglviv",
-    "blog": "https://medium.com/gdg-lviv",
+    "blog": "",
     "url": "http://lviv.gdg.org.ua/"
   },
   "startDate": "2021-01-24T09:00:00+03:00",
@@ -37,11 +37,6 @@
       "route": "team",
       "permalink": "/team/",
       "label": "Team"
-    },
-    {
-      "route": "blog",
-      "permalink": "/blog/",
-      "label": "Blog"
     }
   ],
   "heroSettings": {
@@ -52,14 +47,6 @@
         "image": "/images/backgrounds/home.jpg"
       },
       "fontColor": "#FFF"
-    },
-    "blog": {
-      "title": "Blog",
-      "metaDescription": "Read stories from our team",
-      "background": {
-        "color": "#FFF"
-      },
-      "fontColor": "#424242"
     },
     "speakers": {
       "title": "Speakers",
@@ -179,26 +166,9 @@
     ]
   },
   "mailto": "devfest@gdg.org.ua",
-  "signInProviders": {
-    "providersData": [
-      {
-        "name": "google",
-        "label": "Sign in with Google",
-        "url": "https://accounts.google.com"
-      }
-    ],
-    "allowedProvidersUrl": [
-      "https://accounts.google.com",
-      "https://www.facebook.com",
-      "https://twitter.com"
-    ]
-  },
   "contentLoaders": {
     "schedule": {
       "itemsCount": 2
-    },
-    "blog": {
-      "itemsCount": 3
     },
     "speakers": {
       "itemsCount": 4

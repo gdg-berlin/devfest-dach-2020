@@ -272,19 +272,6 @@ export class SessionElement extends ReduxMixin(PolymerElement) {
   _toggleFeaturedSession(event) {
     event.preventDefault();
     event.stopPropagation();
-    if (!this.user.signedIn) {
-      showToast({
-        message: '{$ schedule.saveSessionsSignedOut $}',
-        action: {
-          title: 'Sign in',
-          callback: () => {
-            openDialog(DIALOGS.SIGNIN);
-          },
-        },
-      });
-      return;
-    }
-
     const sessions = Object.assign({}, this.featuredSessions, {
       [this.session.id]: !this.featuredSessions[this.session.id] ? true : null,
     });

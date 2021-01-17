@@ -7,7 +7,6 @@ import '@polymer/paper-fab';
 import { html, PolymerElement } from '@polymer/polymer';
 import { mixinBehaviors } from '@polymer/polymer/lib/legacy/class';
 import 'plastic-image';
-import '../../components/auth-required';
 import { ReduxMixin } from '../../mixins/redux-mixin';
 import { SpeakersHoC } from '../../mixins/speakers-hoc';
 import { RootState, store } from '../../store';
@@ -156,11 +155,6 @@ class SessionDetails extends SpeakersHoC(
           <div id="feedback" class="additional-sections">
             <h3>{$ feedback.headline $}</h3>
 
-            <auth-required hidden="[[!acceptingFeedback]]">
-              <slot slot="prompt">{$ feedback.leaveFeedback $}</slot>
-              <feedback-block collection="sessions" db-item="[[session.id]]"></feedback-block>
-            </auth-required>
-
             <p hidden="[[acceptingFeedback]]">{$ feedback.sessionClosed $}</p>
           </div>
         </div>
@@ -254,16 +248,6 @@ class SessionDetails extends SpeakersHoC(
   _toggleFeaturedSession(event: Event) {
     event.preventDefault();
     event.stopPropagation();
-    if (!this.user.signedIn) {
-      showToast({
-        message: '{$ schedule.saveSessionsSignedOut $}',
-        action: {
-          title: 'Sign in',
-          callback: () => openDialog(DIALOGS.SIGNIN),
-        },
-      });
-      return;
-    }
     const sessions = Object.assign({}, this.featuredSessions, {
       [this.session.id]: !this.featuredSessions[this.session.id] ? true : null,
     });

@@ -9,7 +9,6 @@ import { DIALOGS } from '../store/dialogs/types';
 import { requestPermission, unsubscribe } from '../store/notifications/actions';
 import { NOTIFICATIONS_STATUS } from '../store/notifications/types';
 import { initialRoutingState, RoutingState } from '../store/routing/state';
-import { signOut } from '../store/user/actions';
 import { TempAny } from '../temp-any';
 import { isDialogOpen } from '../utils/dialogs';
 import './shared-styles';
@@ -169,10 +168,6 @@ export class HeaderToolbar extends ReduxMixin(PolymerElement) {
           </paper-tab>
           {% endfor %}
 
-          <paper-tab class="signin-tab" on-click="signIn" link hidden$="[[user.signedIn]]"
-            >{$ signIn $}</paper-tab
-          >
-
           <a
             href$="[[_getTicketUrl(tickets)]]"
             target="_blank"
@@ -251,16 +246,9 @@ export class HeaderToolbar extends ReduxMixin(PolymerElement) {
             <div layout vertical center-justified>
               <span class="profile-name">[[user.displayName]]</span>
               <span class="profile-email">[[user.email]]</span>
-              <span class="profile-action" role="button" on-click="_signOut">{$ signOut $}</span>
             </div>
           </div>
         </paper-menu-button>
-
-        <paper-icon-button
-          icon="hoverboard:account"
-          on-click="signIn"
-          hidden$="[[_isAccountIconHidden(user.signedIn, viewport.isLaptopPlus)]]"
-        ></paper-icon-button>
       </app-toolbar>
     `;
   }
@@ -314,23 +302,8 @@ export class HeaderToolbar extends ReduxMixin(PolymerElement) {
     this.drawerOpened = true;
   }
 
-  signIn() {
-    openDialog(DIALOGS.SIGNIN);
-  }
-
-  _signOut() {
-    signOut();
-  }
-
   _onScroll() {
     this.transparent = document.documentElement.scrollTop === 0;
-  }
-
-  @observe('user.signedIn')
-  _authStatusChanged(_signedIn) {
-    if (isDialogOpen(this.dialogs, DIALOGS.SIGNIN)) {
-      closeDialog();
-    }
   }
 
   _toggleNotifications() {
