@@ -3,7 +3,7 @@ import '@polymer/iron-icon';
 import { html, PolymerElement } from '@polymer/polymer';
 import '../components/about-block';
 import '../elements/about-organizer-block';
-import '../elements/featured-videos';
+// import '../elements/featured-videos';
 import '../elements/fork-me-block';
 import '../elements/gallery-block';
 import '../elements/partners-block';
@@ -243,17 +243,15 @@ export class HomePage extends ReduxMixin(PolymerElement) {
           </div>
         </div>
       </hero-block>
-      {% if showForkMeBlockForProjectIds.includes(firebase.projectId) %}
-      <fork-me-block></fork-me-block>
-      {% endif %}
       <about-block></about-block>
       <speakers-block></speakers-block>
       <subscribe-block></subscribe-block>
       <tickets-block></tickets-block>
       <gallery-block></gallery-block>
       <about-organizer-block></about-organizer-block>
-      <featured-videos></featured-videos>
-      <partners-block></partners-block>
+      // We can uncomment this once we have our videos uploaded
+      // <featured-videos></featured-videos>
+      // <partners-block></partners-block>
       <footer-block></footer-block>
     `;
   }

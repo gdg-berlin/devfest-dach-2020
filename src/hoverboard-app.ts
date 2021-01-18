@@ -22,7 +22,6 @@ import {
   setLegacyWarnings,
   setPassiveTouchGestures,
   setRemoveNestedTemplates,
-  setSuppressTemplateNotifications,
 } from '@polymer/polymer/lib/utils/settings';
 import 'plastic-image';
 import './components/hero-block';
@@ -43,7 +42,6 @@ import { ReduxMixin } from './mixins/redux-mixin';
 import './pages/coc-page';
 import './pages/faq-page';
 import './pages/home-page';
-import './pages/previous-speakers-page';
 import './pages/schedule-page';
 import './pages/speakers-page';
 import './pages/team-page';
@@ -51,7 +49,6 @@ import { registerServiceWorker } from './service-worker-registration';
 import { RootState, store } from './store';
 import { DialogState, initialDialogState } from './store/dialogs/state';
 import { DIALOGS } from './store/dialogs/types';
-import { getToken, initializeMessaging } from './store/notifications/actions';
 import { setRoute } from './store/routing/actions';
 import { initialRoutingState, RoutingState } from './store/routing/state';
 import { fetchTickets } from './store/tickets/actions';
@@ -64,7 +61,6 @@ import { scrollToY } from './utils/scrolling';
 setFastDomIf(true);
 setPassiveTouchGestures(true);
 setRemoveNestedTemplates(true);
-setSuppressTemplateNotifications(true);
 if (location.hostname === 'localhost') {
   setLegacyWarnings(true);
 }
@@ -253,10 +249,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
             <home-page name="home"></home-page>
             <schedule-page name="schedule" route="[[subRoute]]"></schedule-page>
             <speakers-page name="speakers" route="[[subRoute]]"></speakers-page>
-            <previous-speakers-page
-              name="previous-speakers"
-              route="[[subRoute]]"
-            ></previous-speakers-page>
             <team-page name="team"></team-page>
             <faq-page name="faq"></faq-page>
             <coc-page name="coc"></coc-page>
@@ -328,8 +320,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
   private viewport = {};
   @property({ type: Object })
   private schedule = {};
-  @property({ type: Object })
-  private notifications;
   @property({ type: Boolean })
   private _openedDialog = false;
   @property({ type: Object })
@@ -364,7 +354,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
     this.isSessionDialogOpen = isDialogOpen(this.dialogs, DIALOGS.SESSION);
     this.isFeedbackDialogOpen = isDialogOpen(this.dialogs, DIALOGS.FEEDBACK);
     this.isSubscribeDialogOpen = isDialogOpen(this.dialogs, DIALOGS.SUBSCRIBE);
-    this.notifications = state.notifications;
     this.route = state.routing;
     this.schedule = state.schedule;
     this.tickets = state.tickets;
@@ -409,7 +398,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
     super.ready();
     log('Hoverboard is ready!');
     this.removeAttribute('unresolved');
-    initializeMessaging().then(() => store.dispatch(getToken()));
   }
 
   closeDrawer() {

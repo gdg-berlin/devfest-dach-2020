@@ -8,7 +8,6 @@ import { html, PolymerElement } from '@polymer/polymer';
 import 'plastic-image';
 import '../elements/content-loader';
 import '../elements/filter-menu';
-import '../elements/previous-speakers-block';
 import '../elements/shared-styles';
 import '../elements/text-truncate';
 import { ReduxMixin } from '../mixins/redux-mixin';
@@ -269,9 +268,6 @@ export class SpeakersPage extends SpeakersHoC(ReduxMixin(PolymerElement)) {
           </a>
         </template>
       </div>
-
-      <previous-speakers-block></previous-speakers-block>
-
       <footer-block></footer-block>
     `;
   }

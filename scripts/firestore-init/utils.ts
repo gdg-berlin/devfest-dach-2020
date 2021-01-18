@@ -207,15 +207,3 @@ export const importSchedule = () => {
     console.log('Imported data for', Object.keys(docs).length, 'days');
   });
 };
-
-export const importNotificationsConfig = async () => {
-  const notificationsConfig = data.notifications.config;
-  console.log('Migrating notifications config...');
-  const batch = firestore.batch();
-
-  batch.set(firestore.collection('config').doc('notifications'), notificationsConfig);
-
-  return batch.commit().then(() => {
-    console.log('Imported data for notifications config');
-  });
-};

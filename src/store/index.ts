@@ -3,10 +3,8 @@ import { dialogsReducer } from './dialogs/reducers';
 import { feedbackReducer } from './feedback/reducers';
 import { filtersReducer } from './filters/reducers';
 import { galleryReducer } from './gallery/reducers';
-import { notificationsReducer } from './notifications/reducers';
 import { partnersReducer } from './partners/reducers';
 import { potentialPartnersReducer } from './potential-partners/reducers';
-import { previousSpeakersReducer } from './previous-speakers/reducers';
 import { routingReducer } from './routing/reducers';
 import { scheduleReducer } from './schedule/reducers';
 import { sessionsReducer } from './sessions/reducers';
@@ -24,10 +22,8 @@ const rootReducer = {
   feedback: feedbackReducer,
   filters: filtersReducer,
   gallery: galleryReducer,
-  notifications: notificationsReducer,
   partners: partnersReducer,
   potentialPartners: potentialPartnersReducer,
-  previousSpeakers: previousSpeakersReducer,
   routing: routingReducer,
   schedule: scheduleReducer,
   sessions: sessionsReducer,

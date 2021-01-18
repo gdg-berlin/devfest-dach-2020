@@ -3,14 +3,10 @@ import { PaperMenuButton } from '@polymer/paper-menu-button';
 import { html, PolymerElement } from '@polymer/polymer';
 import { ReduxMixin } from '../mixins/redux-mixin';
 import { RootState, store } from '../store';
-import { closeDialog, openDialog } from '../store/dialogs/actions';
 import { initialDialogState } from '../store/dialogs/state';
 import { DIALOGS } from '../store/dialogs/types';
-import { requestPermission, unsubscribe } from '../store/notifications/actions';
-import { NOTIFICATIONS_STATUS } from '../store/notifications/types';
 import { initialRoutingState, RoutingState } from '../store/routing/state';
 import { TempAny } from '../temp-any';
-import { isDialogOpen } from '../utils/dialogs';
 import './shared-styles';
 
 @customElement('header-toolbar')
@@ -181,47 +177,6 @@ export class HeaderToolbar extends ReduxMixin(PolymerElement) {
         </paper-tabs>
 
         <paper-menu-button
-          id="notificationsMenu"
-          class="notifications-menu"
-          vertical-align="top"
-          horizontal-align="right"
-          no-animations
-        >
-          <paper-icon-button
-            icon="hoverboard:[[_getNotificationsIcon(notifications.status)]]"
-            slot="dropdown-trigger"
-          ></paper-icon-button>
-          <div class="dropdown-panel" slot="dropdown-content">
-            <div hidden$="[[_hideNotificationBlock(notifications.status, 'DEFAULT')]]">
-              <p>{$ notifications.default $}</p>
-              <div class="panel-actions" layout horizontal end-justified>
-                <paper-button primary-text on-click="_toggleNotifications"
-                  >{$ notifications.subscribe $}</paper-button
-                >
-              </div>
-            </div>
-            <div hidden$="[[_hideNotificationBlock(notifications.status, 'GRANTED')]]">
-              <p>{$ notifications.enabled $}</p>
-              <div class="panel-actions" layout horizontal end-justified>
-                <paper-button primary-text on-click="_toggleNotifications"
-                  >{$ notifications.unsubscribe $}</paper-button
-                >
-              </div>
-            </div>
-            <div hidden$="[[_hideNotificationBlock(notifications.status, 'DENIED')]]">
-              <p>{$ notifications.blocked $}</p>
-              <div class="panel-actions" layout horizontal end-justified>
-                <a href="{$ notifications.enable.link $}" target="_blank" rel="noopener noreferrer">
-                  <paper-button primary-text on-click="_closeNotificationMenu"
-                    >{$ notifications.enable.label $}
-                  </paper-button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </paper-menu-button>
-
-        <paper-menu-button
           class="auth-menu"
           hidden$="[[!user.signedIn]]"
           vertical-align="top"
@@ -267,8 +222,6 @@ export class HeaderToolbar extends ReduxMixin(PolymerElement) {
   @property({ type: Object })
   private dialogs = initialDialogState;
   @property({ type: Object })
-  private notifications: { token?: string; status?: string } = {};
-  @property({ type: Object })
   private user = {};
   @property({ type: Object })
   private tickets = { list: [] };
@@ -277,7 +230,6 @@ export class HeaderToolbar extends ReduxMixin(PolymerElement) {
 
   stateChanged(state: RootState) {
     this.dialogs = state.dialogs;
-    this.notifications = state.notifications;
     this.route = state.routing;
     this.schedule = state.schedule;
     this.user = state.user;
@@ -304,32 +256,6 @@ export class HeaderToolbar extends ReduxMixin(PolymerElement) {
 
   _onScroll() {
     this.transparent = document.documentElement.scrollTop === 0;
-  }
-
-  _toggleNotifications() {
-    this._closeNotificationMenu();
-    if (this.notifications.status === NOTIFICATIONS_STATUS.GRANTED) {
-      store.dispatch(unsubscribe(this.notifications.token));
-      return;
-    }
-    store.dispatch(requestPermission());
-  }
-
-  _getNotificationsIcon(status) {
-    return status === NOTIFICATIONS_STATUS.DEFAULT
-      ? 'bell-outline'
-      : status === NOTIFICATIONS_STATUS.GRANTED
-      ? 'bell'
-      : 'bell-off';
-  }
-
-  _hideNotificationBlock(status, blockStatus) {
-    return status !== NOTIFICATIONS_STATUS[blockStatus];
-  }
-
-  _closeNotificationMenu() {
-    // TODO: Remove type cast
-    (this.$.notificationsMenu as PaperMenuButton).close();
   }
 
   _isAccountIconHidden(userSignedIn, isTabletPlus) {
