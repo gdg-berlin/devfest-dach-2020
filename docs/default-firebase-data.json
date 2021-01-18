@@ -200,7 +200,7 @@
         "title": "And' Libraries, Stop Starting up!",
         "speaker": "nishantSrivastava",
         "language": "English",
-        "description": "Nishant is primarily an Android Engineer with experience developing mobile applications and SDKs for the Android platform. However, he has also dabbled into firmware engineering and DSP. He is an open-source enthusiast and contributes to the ecosystem via giving talks, writing blog posts, co-authoring/reviewing books, etc. He is a listed inventor on two patents for using mobile tech in cross-device mobile ad re-targeting domain using unique audio beacon tech. More about him at www.nisrulz.com"
+        "description": ""
       },
       "104": {
         "title": "Get your CI / CD up and running in less then an hour in GCP",
@@ -215,7 +215,7 @@
         "description": ""
       },
       "106": {
-        "title": "(for now)Go Pipelines: Dangerous Beauty of Go",
+        "title": "Go Pipelines: Dangerous Beauty of Go",
         "speaker": "annaRosenthal",
         "language": "English",
         "description": ""
@@ -295,82 +295,108 @@
   },
   "speakers": {
     "carlosMota": {
-      "bio": "",
+      "bio": "Android tech lead at WIT Software, he can easily be spotted there working on the company RCS solution. An enthusiastic for new technology and always trying to reach those last 20% of all of his side projects that seem to be really far away, he loves to share his knowledge with others either by giving talks, teaching, writing or along with a cold beer in the nearest pub. GDG Coimbra organizer and Kotlin evangelist, he also has a huge passion for travel, photography, space and the occasional run.",
       "company": "",
       "featured": false,
-      "name": "Carlos Mota"
+      "name": "Carlos Mota",
+      "photo": "/images/people/carlosMota.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/carlosMota.jpg?alt=media&token=665f2fa7-641c-4023-b9a5-cb494fb5064b"
     },
     "oleBulbuk": {
       "bio": "",
       "company": "",
       "featured": false,
-      "name": "Ole Bulbuk"
+      "name": "Ole Bulbuk",
+      "photo": "/images/people/oleBulbuk.jpg",
+      "photoUrl": ""
     },
     "nishantSrivastava": {
-      "bio": "",
+      "bio": "Nishant is primarily an Android Engineer with experience developing mobile applications and SDKs for the Android platform. However, he has also dabbled into firmware engineering and DSP. He is an open-source enthusiast and contributes to the ecosystem via giving talks, writing blog posts, co-authoring/reviewing books, etc. He is a listed inventor on two patents for using mobile tech in cross-device mobile ad re-targeting domain using unique audio beacon tech. More about him at www.nisrulz.com",
       "company": "",
       "featured": false,
-      "name": "Nishant Srivastava"
+      "name": "Nishant Srivastava",
+      "photo": "/images/people/nishantSrivastava.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/nishantSrivastava.jpg?alt=media&token=dff0c1bc-69c6-486a-99f4-c0f3add7e266"
     },
     "marioFahlandt": {
       "bio": "",
       "company": "",
       "featured": false,
-      "name": "Mario Fahlandt"
+      "name": "Mario Fahlandt",
+      "photo": "/images/people/marioFahlandt.jpg",
+      "photoUrl": ""
     },
     "annaRosenthal": {
-      "bio": "",
+      "bio": "Anna Rosenthal is a backend engineer who previously worked on Java and Go microservices and GCP infrastructure at startups in NYC. She started coding in Go a year ago and it's been \"love at first\" func for her since then. She wants to blog more at softly.blog; in the meantime, you can get in touch with her via Twitter @nnrsntl",
       "company": "",
       "featured": false,
-      "name": "Anna Rosenthal"
+      "name": "Anna Rosenthal",
+      "photo": "/images/people/annaRosenthal.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/annaRosenthal.jpg?alt=media&token=3f0dc7c4-0990-4e36-84d4-2462846dd17f"
     },
     "sarahWachs": {
-      "bio": "",
+      "bio": "Sarah Wachs is a Software Engineer with a focus on Javascript and frontend development. Passionate about sharing knowledge, she is active in the Berlin Tech communities in Berlin, e.g. organising events and workshops with Women Who Code. In her free time she likes to learn other technologies and languages like Go and Rust. To not spend all day in front of a screen, she is also always looking for analogue activities to try like sailing or knitting.",
       "company": "",
       "featured": false,
-      "name": "Sarah Wachs"
+      "name": "Sarah Wachs",
+      "photo": "/images/people/sarahWachs.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/sarahWachs.jpg?alt=media&token=53c172de-500d-4227-9b94-d7b0e95b2bf5"
     },
     "nicolaCorti": {
-      "bio": "",
-      "company": "",
+      "bio": "Nicola Corti is a Google Developer Expert for Kotlin. He has been working with the language since before version 1.0 and he is the maintainer of several open-source libraries and tools. He's currently working as Android Infrastructure Engineer at Spotify in Stockholm, Sweden. Furthermore, he is an active member of the developer community. His involvement goes from speaking at international conferences about Mobile development to leading communities across Europe (GDG Pisa, KUG Hamburg, GDG Sthlm Android). In his free time, he also loves baking, photography, and running.",
+      "company": "Spotify",
       "featured": false,
-      "name": "Nicola Corti"
+      "name": "Nicola Corti",
+      "photo": "/images/people/nicolaCorti.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/nicolaCorti.jpg?alt=media&token=4ffe293c-1e75-4b96-98c8-d1b56cd6ff7a"
     },
     "guillaumeB": {
-      "bio": "",
+      "bio": "Guillaume is a Google Developer Expert on Cloud Platform since 2019 and works at Sfeir as Cloud Architect. Java developer for more than 15 years, and despite positions of responsibilities, he has always kept his wish to create, develop, discover and test new solutions, especially in the Cloud, the machine learning or Python and Go language.  Innovation addict and Google Cloud 3x certified, writer and speaker in his free time, he's fascinated by the serverless solution and all the \"usual\" problems that it solves. More generally, he likes helping people stucks on Google Cloud; you can find him on Stack Overflow (guillaume-blaquiere), Medium (@guillaume.blaquiere) and Twitter (@gblaquiere) ",
       "company": "",
       "featured": false,
-      "name": "Guillaume B"
+      "name": "Guillaume B",
+      "photo": "/images/people/guillaumeB.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/guillaumeB.jpg?alt=media&token=1b9c0de9-f7c7-4119-969a-b0c9bc396e3a"
     },
     "christianSoujon": {
       "bio": "",
       "company": "",
       "featured": false,
-      "name": "Christian Soujon"
+      "name": "Christian Soujon",
+      "photo": "/images/people/christianSoujon.jpg",
+      "photoUrl": ""
     },
     "thomasKunneth": {
       "bio": "",
       "company": "",
       "featured": false,
-      "name": "Thomas Künneth"
+      "name": "Thomas Künneth",
+      "photo": "/images/people/thomasKunneth.jpg",
+      "photoUrl": ""
     },
     "shishir": {
-      "bio": "",
+      "bio": "I'm a Software Engineer and an open-source enthusiast. I'm currently working at Snapengage. Apart from work I love to volunteer, play sports, go for hiking/trekking and do framing.  I am part of a few NGOs whose primary aim is to help students to excel in the tech industry and believe that \"Coding is magical, it provides a new perspective to life, teaching one to think logically and It also boosts creativity\"",
       "company": "",
       "featured": false,
-      "name": "Shishir"
+      "name": "Shishir Bondre",
+      "photo": "/images/people/shishir.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/shishir.jpg?alt=media&token=154e889d-4f9c-4aa6-82ff-d2a5ceb391c0"
     },
     "sowmyaGuru": {
-      "bio": "",
+      "bio": "I am a Freelance Android Engineer working in Berlin for over six years.  I enjoy working on social impactful projects and always open for collaboration. During my freetime, I am a yoga and meditation enthusiast, a sustainability advocate and a developer activist. ",
       "company": "",
       "featured": false,
-      "name": "Sowmya Guru"
+      "name": "Sowmya Guru",
+      "photo": "/images/people/sowmyaGuru.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/sowmyaGuru.jpg?alt=media&token=cd449a46-a509-4d28-a98b-1c4d98517295"
     },
     "ramonHuidobro": {
-      "bio": "",
+      "bio": "Ramón is a software engineering and developer relations contractor based in Vienna, Austria. He's spent the last ten years being directly involved with small businesses and startups getting their apps off the ground or back in shape! His main motivation is community. He's not only actively worked with children, refugees as well as software builders both new and experienced, but also dedicated a significant amount of his time to organising conferences, workshops and other events aimed at helping empower folks in their tech journey.",
       "company": "",
       "featured": false,
-      "name": "Ramón Huidobro"
+      "name": "Ramón Huidobro",
+      "photo": "/images/people/ramonHuidobro.jpg",
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/ramonHuidobro.jpg?alt=media&token=b1529e2c-c929-440c-8bde-96f772a00ef5"
     },
     "test": {
       "bio": "test",
@@ -415,175 +441,9 @@
           ],
           "order": 0,
           "title": "Website and sponsors"
-        },
-        {
-          "name": "Sofiya Huts",
-          "photo": "/images/people/sofiya_huts.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fsofiya_huts.jpg?alt=media&token=a911eafb-f709-4af7-b1cb-58a6604b70d1",
-          "socials": [
-            {
-              "icon": "facebook",
-              "link": "https://www.facebook.com/sophie.huts.7",
-              "name": "Facebook"
-            }
-          ],
-          "order": 1,
-          "title": "Social and media"
-        },
-        {
-          "name": "Vitaliy Zasadnyy",
-          "photo": "/images/people/vitaliy_zasadnyy.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fvitaliy_zasadnyy.jpg?alt=media&token=930e05c8-ae43-4628-8d4c-3e8f5193cda3",
-          "socials": [
-            {
-              "icon": "linkedin",
-              "link": "https://www.linkedin.com/in/zasadnyy",
-              "name": "Linkedin"
-            },
-            {
-              "icon": "twitter",
-              "link": "https://twitter.com/zasadnyy",
-              "name": "Twitter"
-            },
-            {
-              "icon": "website",
-              "link": "http://v.zasadnyy.com/",
-              "name": "Blog"
-            }
-          ],
-          "order": 2,
-          "title": "Speakers"
-        },
-        {
-          "name": "Marta Maxymiak",
-          "photo": "/images/people/marta_maxymiak.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fmarta_maxymiak.jpg?alt=media&token=6532f039-7f86-4304-8558-dbfbb3ae8d68",
-          "socials": [
-            {
-              "icon": "facebook",
-              "link": "https://www.facebook.com/marta.maxymiak",
-              "name": "Facebook"
-            }
-          ],
-          "order": 3,
-          "title": "Party and happiness"
-        },
-        {
-          "name": "Ostap Andrusiv",
-          "photo": "/images/people/ostap_andrusiv.jpg",
-          "photoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/ostap_andrusiv.jpg",
-          "socials": [
-            {
-              "icon": "facebook",
-              "link": "https://www.facebook.com/ostap.andrusiv",
-              "name": "Facebook"
-            },
-            {
-              "icon": "twitter",
-              "link": "https://twitter.com/p1f",
-              "name": "Twitter"
-            },
-            {
-              "icon": "website",
-              "link": "http://andrusiv.com/",
-              "name": "Blog"
-            }
-          ],
-          "order": 4,
-          "title": "Sponsors"
-        },
-        {
-          "name": "Vasylyna Mytsak",
-          "photo": "/images/people/vasylyna_mytsak.jpg",
-          "photoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/vasylyna_mytsak.jpg",
-          "socials": [
-            {
-              "icon": "facebook",
-              "link": "https://www.facebook.com/vasylyna.mytsak",
-              "name": "Facebook"
-            }
-          ],
-          "order": 5,
-          "title": "Party and happiness"
-        },
-        {
-          "name": "Volodya Karpliuk",
-          "photo": "/images/people/volodya_karpliuk.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fvolodya_karpliuk.jpg?alt=media&token=aa08d9c9-c42a-435f-8672-c3a004e3aa08",
-          "socials": [
-            {
-              "icon": "facebook",
-              "link": "https://www.facebook.com/volodya.karpluk",
-              "name": "Facebook"
-            },
-            {
-              "icon": "twitter",
-              "link": "https://twitter.com/keyv23",
-              "name": "Twitter"
-            }
-          ],
-          "order": 6,
-          "title": "Speakers"
-        },
-        {
-          "name": "Diana Pinchuk",
-          "photo": "/images/people/diana_pinchuk.jpg",
-          "photoUrl": "https://firebasestorage.googleapis.com/v0/b/hoverboard-experimental.appspot.com/o/images%2Fpeople%2Fdiana_pinchuk.jpg?alt=media&token=189d67d1-004f-4a3c-9e0c-13bc992bbaf7",
-          "socials": [
-            {
-              "icon": "facebook",
-              "link": "https://www.facebook.com/diana.pinchuk.9",
-              "name": "Facebook"
-            }
-          ],
-          "order": 7,
-          "title": "Social and media"
         }
       ],
       "title": "Core Team"
-    },
-    {
-      "members": [
-        {
-          "name": "Ihor Dvoretskyi",
-          "photo": "/images/people/ihor_dvoretskyi.jpg",
-          "photoUrl": "",
-          "socials": [
-            {
-              "icon": "facebook",
-              "link": "https://www.facebook.com/idvoretskyi",
-              "name": "Facebook"
-            },
-            {
-              "icon": "twitter",
-              "link": "https://twitter.com/idvoretskyi",
-              "name": "Twitter"
-            }
-          ],
-          "order": 0,
-          "title": "Cloud stream"
-        },
-        {
-          "name": "Dmytro Danylyk",
-          "photo": "/images/people/dmytro_danylyk.jpg",
-          "photoUrl": "",
-          "socials": [
-            {
-              "icon": "twitter",
-              "link": "https://twitter.com/dmytrodanylyk",
-              "name": "Twitter"
-            },
-            {
-              "icon": "website",
-              "link": "http://www.dmytrodanylyk.com/#/about",
-              "name": "Website"
-            }
-          ],
-          "order": 1,
-          "title": "Android Stream"
-        }
-      ],
-      "title": "Program Committee"
     }
   ],
   "tickets": [
