@@ -95,10 +95,6 @@ class SubscribeDialog extends ReduxMixin(mixinBehaviors([IronOverlayBehavior], P
 
           <paper-button
             on-click="_subscribe"
-            ga-on="click"
-            ga-event-category="attendees"
-            ga-event-action="subscribe"
-            ga-event-label="subscribe block"
             primary
           >
             [[submitLabel]]

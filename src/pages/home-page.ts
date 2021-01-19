@@ -2,11 +2,11 @@ import { customElement, property } from '@polymer/decorators';
 import '@polymer/iron-icon';
 import { html, PolymerElement } from '@polymer/polymer';
 import '../components/about-block';
-import '../elements/about-organizer-block';
+// import '../elements/about-organizer-block';
 // import '../elements/featured-videos';
 import '../elements/fork-me-block';
-import '../elements/gallery-block';
-import '../elements/partners-block';
+// import '../elements/gallery-block';
+// import '../elements/partners-block';
 import '../elements/speakers-block';
 import '../elements/tickets-block';
 import { ReduxMixin } from '../mixins/redux-mixin';
@@ -155,22 +155,7 @@ export class HomePage extends ReduxMixin(PolymerElement) {
 
           <div class="action-buttons" layout horizontal center-justified wrap>
             <paper-button
-              class="watch-video"
-              on-click="_playVideo"
-              ga-on="click"
-              ga-event-category="video"
-              ga-event-action="watch"
-              ga-event-label="hero block - view highlights"
-            >
-              <iron-icon icon="hoverboard:movie"></iron-icon>
-              {$ viewHighlights $}
-            </paper-button>
-            <paper-button
               on-click="_scrollToTickets"
-              ga-on="click"
-              ga-event-category="tickets"
-              ga-event-action="scroll"
-              ga-event-label="hero block - scroll to tickets"
               primary
               invert
             >
@@ -247,15 +232,18 @@ export class HomePage extends ReduxMixin(PolymerElement) {
       <speakers-block></speakers-block>
       <subscribe-block></subscribe-block>
       <tickets-block></tickets-block>
-      <gallery-block></gallery-block>
-      <about-organizer-block></about-organizer-block>
-      // We can uncomment this once we have our videos uploaded
-      // <featured-videos></featured-videos>
-      // <partners-block></partners-block>
       <footer-block></footer-block>
     `;
   }
 
+
+  //       // <gallery-block></gallery-block>
+      // <about-organizer-block></about-organizer-block>
+      // We can uncomment this once we have our videos uploaded
+      // <featured-videos></featured-videos>
+      // <partners-block></partners-block>
+
+      
   @property({ type: Boolean })
   private active = false;
   @property({ type: Object })
@@ -263,15 +251,6 @@ export class HomePage extends ReduxMixin(PolymerElement) {
 
   stateChanged(state: RootState) {
     this.viewport = state.ui.viewport;
-  }
-
-  _playVideo() {
-    toggleVideoDialog({
-      title: '{$  aboutBlock.callToAction.howItWas.label $}',
-      youtubeId: '{$  aboutBlock.callToAction.howItWas.youtubeId $}',
-      disableControls: true,
-      opened: true,
-    });
   }
 
   _scrollToTickets() {

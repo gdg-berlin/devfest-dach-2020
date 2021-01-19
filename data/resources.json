@@ -1,16 +1,16 @@
 {
   "title": "DevFest DACH 2020 (Delayed)",
   "description": "Join the community, learn new things!",
-  "image": "images/social-share.jpg",
+  "image": "images/social-share.png",
   "keywords": "event, gdg, gde, devfest, google, programming, android, chrome, polymer, developers, web, cloud, androiddev",
   "dates": "January 24, 2021",
-  "partnershipProposition": "https://bit.ly/dfua17-partners",
+  "partnershipProposition": "",
   "share": "Share",
   "followOur": "Follow our",
   "followUs": "Follow us",
   "emailUs": "Email us",
-  "partnershipResources": "Partnership Resources",
-  "eventResources": "Event Resources",
+  "partnershipResources": "",
+  "eventResources": "",
   "buyTicket": "RSVP",
   "viewHighlights": "View Highlights",
   "offlineMessage": "You can still work offline.",
@@ -21,7 +21,7 @@
   "country": "Country",
   "time": "Time",
   "faq": "/data/faq.md",
-  "coc": "/data/coc.md",
+  "coc": "",
   "timezoneOffset": "-180",
   "mySchedule": {
     "title": "My Schedule",
@@ -88,20 +88,13 @@
     "title": "About",
     "callToAction": {
       "featuredSessions": {
-        "description": "GDG DevFest Ukraine brings together the world class experts in Android, Web and Cloud technologies to Lviv for 2 days of sessions, workshops and showcases.",
-        "label": "Explore featured session",
-        "link": "https://www.youtube.com/playlist?list=PLt8lEzcLNl31AouwDkbLbLARlQFwNS2en"
-      },
-      "howItWas": {
-        "description": "Described by many as 'Google I/O of Ukraine', our team creates DevFest to be the best place for experience sharing in a phenomenal atmosphere.",
-        "label": "See how it was in 2016",
-        "youtubeId": "TdpbgRgz6eE"
+        "description": "DevFest DACH brings together GDGs in Germany, Austria, and Switzerland to brings you some of the best content!"
       }
     },
     "statisticsBlock": {
       "attendees": {
         "label": "Attendees",
-        "number": "900"
+        "number": "100+"
       },
       "days": {
         "label": "Days",

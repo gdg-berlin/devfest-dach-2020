@@ -205,10 +205,6 @@ export class SpeakersPage extends SpeakersHoC(ReduxMixin(PolymerElement)) {
           <a
             class="speaker card"
             href$="[[speaker.link]]"
-            ga-on="click"
-            ga-event-category="speaker"
-            ga-event-action="open details"
-            ga-event-label$="[[speaker.name]]"
           >
             <div relative>
               <plastic-image

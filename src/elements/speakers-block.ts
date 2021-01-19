@@ -157,10 +157,6 @@ export class SpeakersBlock extends SpeakersHoC(ReduxMixin(PolymerElement)) {
             <div
               class="speaker"
               on-click="_openSpeaker"
-              ga-on="click"
-              ga-event-category="speaker"
-              ga-event-action="open details"
-              ga-event-label$="[[speaker.name]]"
             >
               <div relative>
                 <plastic-image

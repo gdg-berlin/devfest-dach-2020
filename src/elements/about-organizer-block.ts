@@ -54,10 +54,6 @@ export class AboutOrganizerBlock extends ReduxMixin(PolymerElement) {
           <a
             href="/team"
             class="image-link"
-            ga-on="click"
-            ga-event-category="link"
-            ga-event-action="open"
-            ga-event-label="open team page"
           >
             <plastic-image
               class="organizers-photo"

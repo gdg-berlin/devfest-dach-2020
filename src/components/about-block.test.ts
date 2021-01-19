@@ -31,16 +31,4 @@ describe('about-block', () => {
       getByText(container, '{$ aboutBlock.statisticsBlock.attendees.label $}')
     ).toBeInTheDocument();
   });
-
-  it('plays the video', async () => {
-    const { container } = await fixture(html`<about-block></about-block>`);
-    fireEvent.click(getByText(container, '{$ aboutBlock.callToAction.howItWas.label $}'));
-    expect(mockToggleVideoDialogs).toHaveBeenCalledTimes(1);
-    expect(mockToggleVideoDialogs).toHaveBeenCalledWith({
-      title: '{$  aboutBlock.callToAction.howItWas.label $}',
-      youtubeId: '{$  aboutBlock.callToAction.howItWas.youtubeId $}',
-      disableControls: true,
-      opened: true,
-    });
-  });
 });

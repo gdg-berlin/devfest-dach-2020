@@ -27,7 +27,7 @@ import 'plastic-image';
 import './components/hero-block';
 import { log } from './console';
 import './elements/dialogs/feedback-dialog';
-import './elements/dialogs/previous-speaker-details';
+// import './elements/dialogs/previous-speaker-details';
 import './elements/dialogs/session-details';
 import './elements/dialogs/speaker-details';
 import './elements/dialogs/subscribe-dialog';
@@ -221,9 +221,6 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
                 target="_blank"
                 rel="noopener noreferrer"
                 on-click="closeDrawer"
-                ga-on="click"
-                ga-event-category="ticket button"
-                ga-event-action="buy_click"
                 layout
                 horizontal
                 center
@@ -274,12 +271,12 @@ export class HoverboardApp extends ReduxMixin(PolymerElement) {
         no-cancel-on-outside-click="[[viewport.isPhone]]"
       ></speaker-details>
 
-      <previous-speaker-details
-        opened="[[isPreviousSpeakerDialogOpen]]"
-        data="[[dialogs.data]]"
-        with-backdrop="[[viewport.isTabletPlus]]"
-        no-cancel-on-outside-click="[[viewport.isPhone]]"
-      ></previous-speaker-details>
+      // <previous-speaker-details
+      //   opened="[[isPreviousSpeakerDialogOpen]]"
+      //   data="[[dialogs.data]]"
+      //   with-backdrop="[[viewport.isTabletPlus]]"
+      //   no-cancel-on-outside-click="[[viewport.isPhone]]"
+      // ></previous-speaker-details>
 
       <session-details
         opened="[[isSessionDialogOpen]]"

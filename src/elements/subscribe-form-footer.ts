@@ -68,11 +68,7 @@ export class SubscribeFormFooter extends ReduxMixin(PolymerElement) {
         </paper-input>
         <paper-button
           on-click="_subscribe"
-          ga-on="click"
           disabled="[[subscribed]]"
-          ga-event-category="attendees"
-          ga-event-action="subscribe"
-          ga-event-label="subscribe footer"
           layout
           self-end
         >

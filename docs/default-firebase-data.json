@@ -188,91 +188,89 @@
         "title": "Cross platform UI development with Kotlin",
         "speaker": "carlosMota",
         "language": "English",
-        "description": ""
+        "description": "For several years now, that we’ve been trying to find new solutions on how we could develop a single project and run it on all platforms. We’ve been seeing all types of solutions: some are web-based, others require you to learn a new language, and others even may require that you pay a monthly fee to use. It also comes with the drawback that all your UI depends on the framework implementation. So, if there’s a native update you’ll need to wait until someone rewrites the widgets for you to update your app. Kotlin multiplatform gives us a new solution. It focuses on sharing your business logic across all platforms, leaving the UI to be implemented natively. Since it’s Kotlin, you can take full advantage of its language features - concise, safe, etc. Moreover, if you’re coming from android you might already be familiarised with Kotlin and even if you’re an iOS developer you’ll see that it’s quite similar to Swift.\nJoin me on this triathlon and let’s go through Android, iOS, and Web in under 30 minutes."
       },
       "102": {
         "title": "Microservices - The End of Software Design",
         "speaker": "oleBulbuk",
         "language": "English",
-        "description": ""
+        "description": "An introduction to what sets Go apart from other programming languages and how it simplifies the handling of complexity. The influence of language features, monoliths, microservices and monorepos on complexity is shown and how tools can help to mitigate remaining problems."
       },
       "103": {
         "title": "And' Libraries, Stop Starting up!",
         "speaker": "nishantSrivastava",
         "language": "English",
-        "description": ""
+        "description": "A lot of Android libraries are being built/shipped by indie devs and companies alike. Everyone wants to start working inside the host application as quickly as possible. This competition has led to many of these Android libraries to implement various possible hack/tricks in order to get up and running inside host Android application as quickly as possible. Eventually leading to bad side effects introduced on the host application side.\nIn this session, you will get to learn about the various ways Android Library developers use to init their code inside the host application. You will also get to understand how these mechanisms work, what pitfalls they bring and where are these employed within an existing Android application. Towards the end of this session, the new and shiny Jetpack Startup AndroidX library will be introduced along with information on how to use it and what it brings to the table to solve the startup mess the Android Library ecosystem is in currently.\nBy the end of this session, you will be all set to build Android libraries that scale and have API which doesn't mess up with the startup of your Android application."
       },
       "104": {
         "title": "Get your CI / CD up and running in less then an hour in GCP",
         "speaker": "marioFahlandt",
         "language": "English",
-        "description": ""
+        "description": "We set up a completely automated deployment process that starts with your code repository, builds automated images, and get them running in a Kubernetes Engine, all in Google Cloud. No more server management, just focus on what you like doing most: building great stuff. We will use Docker, the Container Builder Kubernetes Engine, Code Repository and Cloud Code. Bonus round: also include tests in your build process."
       },
       "105": {
-        "title": "BREAK",
-        "speaker": "",
-        "language": "English",
+        "title": "Break",
+        "icon": "coffee-break",
         "description": ""
       },
       "106": {
         "title": "Go Pipelines: Dangerous Beauty of Go",
         "speaker": "annaRosenthal",
         "language": "English",
-        "description": ""
+        "description": "There are many kinds of concurrent programs out there, a Go pipeline being one of them. Fundamentally, a pipeline is a series of stages connected by channels, where each stage is a Goroutine or a group of Goroutines running the same function. My talk is aimed at enthusiastic Go beginners. It introduces threads/processes, briefly mentions deadlocks, explains the major differences between a thread and a Goroutine, goes over channels and demonstrates a working Go pipeline. (Note to you: I can include code snippets or do a live demo for the pipeline portion; there will be code snippets for channels/Goroutines). "
       },
       "107": {
         "title": "Code Like a Child",
         "speaker": "sarahWachs",
         "language": "English",
-        "description": ""
+        "description": "Playful office spaces with video games and ping pong tables are a trend in startups and big tech companies alike. Sarah believes there are more situations than just recreation where we can benefit from sending our adult self on a break. Thinking more like children, we might come up with new ways to look at problems and find unique solutions to overcome technical challenges."
       },
       "108": {
-        "title": "BREAK",
-        "speaker": "",
-        "language": "English",
+        "title": "Break",
+        "icon": "coffee-break",
         "description": ""
       },
       "109": {
         "title": "There is 1 broken API among us",
         "speaker": "nicolaCorti",
         "language": "English",
-        "description": ""
+        "description": "As a library user, you probably know that versions don't always tell the truth. Have you ever experienced a broken build after doing a minor bump of a library?\nAs a library author, maintaining a clean API is a challenge. There is always the risk that a breaking change sneaks in by accident.\nWouldn't it be nice to get notified if you're accidentally breaking your users' code? A tool to inspect the binary API of your Kotlin/Java code can help you exactly with that. In this talk, we will see some of those tools and how that simplifies the life of library & SDK developers."
       },
       "110": {
         "title": "Security in serverless compute on Google Cloud: take over the control of the infrastructure",
         "speaker": "guillaumeB",
         "language": "English",
-        "description": ""
+        "description": "Security is a common challenge for everyone. Standard and robust patterns exist and are known in traditional infrastructure. However, the serverless change the game and imply a false feeling of losing control, especially in the security part.\nThis session is focused on all the ways to secure the communication to and from serverless compute products on Google Cloud. The OAuth2 token generation and the difference of usage between access token and identity token, IAM service and the service/user accounts, VPC access and private networks access, load balancers, ingress and egress control will no longer have mysteries for you at the end of the session!"
       },
       "111": {
         "title": "Cloud Native Analytics Infrastructure",
         "speaker": "christianSoujon",
         "language": "English",
-        "description": ""
+        "description": "Data engineers and data analysts have a huge toolset at their disposal today. Identifying the building blocks that match your data needs can be challenging. In this talk, I will give you an actionable guide on how to assemble your own cloud-native data architecture for 2021 and beyond."
       },
       "112": {
         "title": "Composables under the hood",
         "speaker": "thomasKunneth",
         "language": "English",
-        "description": ""
+        "description": "Building declarative user interfaces with Jetpack Compose is easy and fun. But if you come from imperative frameworks, you are used to certain ways of doing things. For example, custom components can be implemented using drawing primitives. How is this achieved with composables? Also, what about the main thread. Do we still need to take care of this? In this talk I will map imperative best practices to the declarative world. You'll see plenty of examples and running code."
       },
       "113": {
         "title": "What the heck are generators and coroutines?",
         "speaker": "shishir",
         "language": "English",
-        "description": ""
+        "description": "Generators and coroutines have become the buzz words now a days. In this talk I want to take some time out to unfold these concepts and make them simple to understand. So that, we can really use their power in our day to day programming activities."
       },
       "114": {
         "title": "Influencing Diverstiy",
         "speaker": "sowmyaGuru",
         "language": "English",
-        "description": ""
+        "description": "If you a developer you can probably can relate to the empty toilets near the IT departments. Once I got so used to it that when I found another fellow human in there, I flinched. \nOver the years, I went on to change multiple jobs in Berlin but the problem still existed in most workplaces. \nThese days I mentor women and other underrepresented folks with their problems and teach programming with a hope that the diversity improves with time.\nTo succeed we need more mentors, advocates and role models who can be there and help lift each other up. \nIn my talk will be sharing what it means to promote diversity, some everyday problems and why diversity is an important topic for everyone."
       },
       "115": {
         "title": "How we learn to code together remotely",
         "speaker": "ramonHuidobro",
         "language": "English",
-        "description": ""
+        "description": "Uprooting our coding study group to a remote, online format has had its challenges. Coming to terms with the fact that we behave and interact in a fundamentally different way on video (or other!) chat has motivated me to explore other methods of continuing to foster a community with an emphasis on curiosity.\nThis talk aims to detail the journey taken in moving our coding study group to a remote format, what we've learned from others trying the same, and how you can create (or participate in!) your own!"
       },
       "116": {
         "title": "Socialize",
@@ -287,7 +285,8 @@
         "description": ""
       },
       "118": {
-        "title": "BREAK"
+        "title": "Break",
+        "icon": "coffee-break"
       },
       "119": {
         "title": "Closing"
@@ -297,7 +296,7 @@
     "carlosMota": {
       "bio": "Android tech lead at WIT Software, he can easily be spotted there working on the company RCS solution. An enthusiastic for new technology and always trying to reach those last 20% of all of his side projects that seem to be really far away, he loves to share his knowledge with others either by giving talks, teaching, writing or along with a cold beer in the nearest pub. GDG Coimbra organizer and Kotlin evangelist, he also has a huge passion for travel, photography, space and the occasional run.",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Carlos Mota",
       "photo": "/images/people/carlosMota.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/carlosMota.jpg?alt=media&token=665f2fa7-641c-4023-b9a5-cb494fb5064b"
@@ -305,15 +304,15 @@
     "oleBulbuk": {
       "bio": "",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Ole Bulbuk",
       "photo": "/images/people/oleBulbuk.jpg",
-      "photoUrl": ""
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/oleBulbuk.jpg?alt=media&token=4116fbb0-e5e2-4621-a7bf-7129f787dab2"
     },
     "nishantSrivastava": {
       "bio": "Nishant is primarily an Android Engineer with experience developing mobile applications and SDKs for the Android platform. However, he has also dabbled into firmware engineering and DSP. He is an open-source enthusiast and contributes to the ecosystem via giving talks, writing blog posts, co-authoring/reviewing books, etc. He is a listed inventor on two patents for using mobile tech in cross-device mobile ad re-targeting domain using unique audio beacon tech. More about him at www.nisrulz.com",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Nishant Srivastava",
       "photo": "/images/people/nishantSrivastava.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/nishantSrivastava.jpg?alt=media&token=dff0c1bc-69c6-486a-99f4-c0f3add7e266"
@@ -321,7 +320,7 @@
     "marioFahlandt": {
       "bio": "",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Mario Fahlandt",
       "photo": "/images/people/marioFahlandt.jpg",
       "photoUrl": ""
@@ -329,7 +328,7 @@
     "annaRosenthal": {
       "bio": "Anna Rosenthal is a backend engineer who previously worked on Java and Go microservices and GCP infrastructure at startups in NYC. She started coding in Go a year ago and it's been \"love at first\" func for her since then. She wants to blog more at softly.blog; in the meantime, you can get in touch with her via Twitter @nnrsntl",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Anna Rosenthal",
       "photo": "/images/people/annaRosenthal.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/annaRosenthal.jpg?alt=media&token=3f0dc7c4-0990-4e36-84d4-2462846dd17f"
@@ -337,15 +336,15 @@
     "sarahWachs": {
       "bio": "Sarah Wachs is a Software Engineer with a focus on Javascript and frontend development. Passionate about sharing knowledge, she is active in the Berlin Tech communities in Berlin, e.g. organising events and workshops with Women Who Code. In her free time she likes to learn other technologies and languages like Go and Rust. To not spend all day in front of a screen, she is also always looking for analogue activities to try like sailing or knitting.",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Sarah Wachs",
       "photo": "/images/people/sarahWachs.jpg",
-      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/sarahWachs.jpg?alt=media&token=53c172de-500d-4227-9b94-d7b0e95b2bf5"
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/sarahWachs.jpg?alt=media&token=1ea84484-ced7-49b8-96ee-da11aaad2d4b"
     },
     "nicolaCorti": {
       "bio": "Nicola Corti is a Google Developer Expert for Kotlin. He has been working with the language since before version 1.0 and he is the maintainer of several open-source libraries and tools. He's currently working as Android Infrastructure Engineer at Spotify in Stockholm, Sweden. Furthermore, he is an active member of the developer community. His involvement goes from speaking at international conferences about Mobile development to leading communities across Europe (GDG Pisa, KUG Hamburg, GDG Sthlm Android). In his free time, he also loves baking, photography, and running.",
       "company": "Spotify",
-      "featured": false,
+      "featured": true,
       "name": "Nicola Corti",
       "photo": "/images/people/nicolaCorti.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/nicolaCorti.jpg?alt=media&token=4ffe293c-1e75-4b96-98c8-d1b56cd6ff7a"
@@ -353,39 +352,39 @@
     "guillaumeB": {
       "bio": "Guillaume is a Google Developer Expert on Cloud Platform since 2019 and works at Sfeir as Cloud Architect. Java developer for more than 15 years, and despite positions of responsibilities, he has always kept his wish to create, develop, discover and test new solutions, especially in the Cloud, the machine learning or Python and Go language.  Innovation addict and Google Cloud 3x certified, writer and speaker in his free time, he's fascinated by the serverless solution and all the \"usual\" problems that it solves. More generally, he likes helping people stucks on Google Cloud; you can find him on Stack Overflow (guillaume-blaquiere), Medium (@guillaume.blaquiere) and Twitter (@gblaquiere) ",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Guillaume B",
       "photo": "/images/people/guillaumeB.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/guillaumeB.jpg?alt=media&token=1b9c0de9-f7c7-4119-969a-b0c9bc396e3a"
     },
     "christianSoujon": {
-      "bio": "",
+      "bio": "I'm a data-focussed Cloud Architect for DoiT International out of Hamburg, Germany. I spent a few years in the San Francisco Bay Area for school and work where I got my head stuck in the big data and tech world. Since then, I doubled down on the cloud and spent the last four years building the GCP business for a large marketing technology agency from scratch. When I'm not stuck in the cloud, I'm probably on my yoga mat or in the kitchen cooking up some plant-based treats 🥦",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Christian Soujon",
       "photo": "/images/people/christianSoujon.jpg",
-      "photoUrl": ""
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/christianSoujon.jpg?alt=media&token=0f0535d3-c379-4210-99ea-ab20f2835aa4"
     },
     "thomasKunneth": {
-      "bio": "",
+      "bio": "I love writing. That is, articles, apps and books. Also, I am a confessing mobile computing addict. And you can frequently watch me speaking at conferences and meetups. Being a child of the 70s my first encounter with programming was in the era of home computers. Those tiny machines (mine was a Laser 210) were usually fed with BASIC, which was the first programming language I learned. Later came C, Perl and a few more. During the 90s I wrote a bunch of programs for the Atari ST series. The first decade of my professional career was (inevitably) Java. Today it’s mostly Kotlin, C#, Dart and Swift.",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Thomas Künneth",
       "photo": "/images/people/thomasKunneth.jpg",
-      "photoUrl": ""
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/thomasKunneth.png?alt=media&token=48f3e680-697f-423b-84f7-850519b65f47"
     },
     "shishir": {
       "bio": "I'm a Software Engineer and an open-source enthusiast. I'm currently working at Snapengage. Apart from work I love to volunteer, play sports, go for hiking/trekking and do framing.  I am part of a few NGOs whose primary aim is to help students to excel in the tech industry and believe that \"Coding is magical, it provides a new perspective to life, teaching one to think logically and It also boosts creativity\"",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Shishir Bondre",
       "photo": "/images/people/shishir.jpg",
-      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/shishir.jpg?alt=media&token=154e889d-4f9c-4aa6-82ff-d2a5ceb391c0"
+      "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/shishir.jpg?alt=media&token=965c78c9-a7ce-4cc2-9bd1-462e71371625"
     },
     "sowmyaGuru": {
       "bio": "I am a Freelance Android Engineer working in Berlin for over six years.  I enjoy working on social impactful projects and always open for collaboration. During my freetime, I am a yoga and meditation enthusiast, a sustainability advocate and a developer activist. ",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Sowmya Guru",
       "photo": "/images/people/sowmyaGuru.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/sowmyaGuru.jpg?alt=media&token=cd449a46-a509-4d28-a98b-1c4d98517295"
@@ -393,26 +392,10 @@
     "ramonHuidobro": {
       "bio": "Ramón is a software engineering and developer relations contractor based in Vienna, Austria. He's spent the last ten years being directly involved with small businesses and startups getting their apps off the ground or back in shape! His main motivation is community. He's not only actively worked with children, refugees as well as software builders both new and experienced, but also dedicated a significant amount of his time to organising conferences, workshops and other events aimed at helping empower folks in their tech journey.",
       "company": "",
-      "featured": false,
+      "featured": true,
       "name": "Ramón Huidobro",
       "photo": "/images/people/ramonHuidobro.jpg",
       "photoUrl": "https://firebasestorage.googleapis.com/v0/b/devfest-dach-2020-dev.appspot.com/o/ramonHuidobro.jpg?alt=media&token=b1529e2c-c929-440c-8bde-96f772a00ef5"
-    },
-    "test": {
-      "bio": "test",
-      "company": "test",
-      "companyLogo": "/images/logos/gdg-lviv.svg",
-      "companyLogoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/logos/gdg-lviv.svg",
-      "country": "Test",
-      "featured": true,
-      "name": "test",
-      "photo": "/images/people/adrian_kajda.jpg",
-      "photoUrl": "https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/adrian_kajda.jpg",
-      "pronouns": "he/him",
-      "shortBio": "test",
-      "socials": [],
-      "order": 0,
-      "title": "Test"
     }
   },
   "team": [
