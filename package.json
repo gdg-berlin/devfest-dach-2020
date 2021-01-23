@@ -70,7 +70,7 @@
     "@firebase/testing": "^0.20.11",
     "@open-wc/building-rollup": "^1.9.4",
     "@testing-library/dom": "^7.29.1",
-    "@testing-library/jest-dom": "^5.11.8",
+    "@testing-library/jest-dom": "^5.11.9",
     "@types/jest": "^26.0.19",
     "@types/jest-dev-server": "^4.2.0",
     "@types/node": "^12.19.11",
